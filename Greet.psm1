@@ -1,13 +1,13 @@
 function New-Greeting() {
     [CmdletBinding()]
     param(
-        [Parameter()]
-        [Alias('Prefix')]
-        [string] $Greeting = 'Hello',
-
         [Parameter(Mandatory=$true, 
             ValueFromPipeline=$true)]
-        [string]$Name
+        [string]$Name,
+
+        [Parameter()]
+        [Alias('Prefix')]
+        [string] $Greeting = 'Hello'
     )
 
     process {
