@@ -18,6 +18,4 @@ test_script:
         Import-Module .\Greet.psm1
         Update-MarkdownHelp -Path .\docs
 
-        throw "Documentation is not updated"
-        
-        
+        git diff
