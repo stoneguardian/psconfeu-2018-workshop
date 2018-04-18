@@ -7,7 +7,10 @@ function New-Greeting() {
 
         [Parameter()]
         [Alias('Prefix')]
-        [string] $Greeting = 'Hello'
+        [string] $Greeting = 'Hello',
+
+        [Parameter()]
+        [string]$Test
     )
 
     process {
