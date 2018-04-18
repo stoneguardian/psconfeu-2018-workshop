@@ -18,4 +18,10 @@ test_script:
         Import-Module .\Greet.psm1
         Update-MarkdownHelp -Path .\docs
 
-        git diff
+        $diffs = git diff 2> $null
+        $diffs
+
+        if($null -ne $diffs)
+        {
+            throw "Help not updated"
+        }
