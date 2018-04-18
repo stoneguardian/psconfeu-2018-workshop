@@ -15,3 +15,5 @@ test_script:
         # TODO: load the Greet module and write a script
         # that will throw if docs are not up-to-date with the code.
         # In other words, if Update-MarkdownHelp changes the markdown.
+        throw "Test"
+        
