@@ -3,10 +3,27 @@ function New-Greeting() {
     param(
         [Parameter(Mandatory=$true, 
             ValueFromPipeline=$true)]
-        [string]$Name
+        [string]$Name,
+
+        [Parameter()]
+        [Alias('Prefix')]
+        [string] $Greeting = 'Hello'
     )
 
     process {
-        "Hello " + $Name
+        "$Greeting $Name"
     }
+}
+
+
+function Get-Name()
+{
+    param()
+
+    @(
+        'Hallvard',
+        'Bjørn Arne',
+        'Jack',
+        'Ivan'
+    )
 }
