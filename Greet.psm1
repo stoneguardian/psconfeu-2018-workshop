@@ -10,7 +10,7 @@ function New-Greeting() {
         [string] $Greeting = 'Hello',
 
         [Parameter()]
-        [string]$Test
+        [string] $Test
     )
 
     process {
